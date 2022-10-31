@@ -10,19 +10,20 @@ export function App() {
     <main
       className={`h-screen w-full flex items-center justify-center ${bodyBackground()} bg-cover`}
     >
-      <div>
-        <form>
-          <label>Cidade</label>
-          <input
-            type="text"
-            className="border-black"
-            onChange={(e) => setLocale(e.target.value)}
-            placeholder="Digite uma localidade"
-          />
-          <button type="button" onClick={() => handleClickWeather()}>
-            Enviar
-          </button>
-        </form>
+      <div className="w-[60%] md:w-5/12 h-3/5 bg-zinc-600">
+        <div className="my-8 mx-8">
+          <div className="grid gap-4 md:flex md:items-center md:justify-between">
+            <input
+              type="text"
+              className="w-full md:w-[80%] border-b-white border-solid border-b-2 bg-transparent"
+              onChange={(e) => setLocale(e.target.value)}
+              placeholder="Digite uma localidade"
+            />
+            <button type="button" className="bg-green-500 text-white py-1 px-4 rounded-md opacity-80 hover:opacity-100" onClick={() => handleClickWeather()}>
+              Enviar
+            </button>
+          </div>
+        </div>
       </div>
     </main>
   );
@@ -39,11 +40,11 @@ export function App() {
   function bodyBackground() {
     const hora = date.getHours();
     if (hora >= 5 && hora <= 12) {
-      return "bg-[url('Fundo/manha.jpg')]";
+      return "bg-[url('manha.jpg')]";
     } else if (hora > 12 && hora <= 17) {
-      return "bg-[url('Fundo/tarde.jpg')]";
+      return "bg-[url('tarde.jpg')]";
     } else {
-      return "bg-[url('Fundo/noite.jpg')]";
+      return "bg-[url('noite.jpg')]";
     }
   }
 }
