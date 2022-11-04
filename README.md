@@ -116,7 +116,8 @@ bower install moment --save # bower (deprecated)
 <br/>
 
 <div align="center">
-    
+    <img src="./github/PrevisãoTempoPc.gif">
+    <img src="./github/PrevisãoTempoMobile.gif">
 </div>
 
 <p>Alerrando © 2022 Obrigado por acessar</p>
