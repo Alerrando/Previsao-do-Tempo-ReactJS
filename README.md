@@ -58,21 +58,13 @@ pnpm create vite my-vue-app --template vue
 <ul>
 <li>TypeScript
 
-<a href="https://tailwindcss.com/">
-<li>Tailwind CSS
-</a>
+<li><a href="https://tailwindcss.com/">Tailwind CSS</a>
 
-<a href="https://postcss.org/">
-<li>PostCSS
-</a>
+<li><a href="https://postcss.org/">PostCSS</a>
 
-<a href="https://axios-http.com/docs/intro">
-<li>Axios
-</a>
+<li><a href="https://axios-http.com/docs/intro">Axios</a>
 
-<a href="https://momentjs.com/">
-<li>Moment.js
-</a>
+<li><a href="https://momentjs.com/">Moment.js</a>
 
 </ul>
 </br>
