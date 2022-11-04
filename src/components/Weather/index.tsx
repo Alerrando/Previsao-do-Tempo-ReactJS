@@ -34,7 +34,7 @@ export function Weather(props: WeatherProps) {
         </div>
       </div>
 
-      <div className="grid gap-2 md:flex items-center justify-between mt-4 md:mt-6 md:mb-4">
+      <div className="grid gap-2 md:flex items-center justify-between mt-4 md:mt-6">
         <p className="">{`Humidade: ${infoLocale.current.humidity}%`}</p>
         <p className="">{`Vento: ${infoLocale.current.wind_kph}km/h`}</p>
         <p className="">{`Sensação termica: ${infoLocale.current.feelslike_c}°`}</p>
@@ -51,7 +51,7 @@ export function Weather(props: WeatherProps) {
                       <span className="opacity-50 pr-2">{`${day.day.maxtemp_c}°`}</span>
                       <span>{`${day.day.mintemp_c}°`}</span>
                     </div>
-                    <p className="font-xs">{diaSemana[moment(day.date).format("E")]}</p>
+                    <p className="text-xs">{diaSemana[moment(day.date).format("E")]}</p>
                   </div>
                 </div>
             ): null}
