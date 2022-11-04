@@ -4,16 +4,16 @@ import { Weather } from "./components/Weather";
 
 export function App() {
   const [locale, setLocale] = useState<string>("");
-  const [infoLocale, setInfoLocale] = useState<object>({});
+  const [infoLocale, setInfoLocale] = useState<any>({});
   let date = new Date();
   let background:string = bodyBackground();
 
   return (
-    <main className={`h-screen w-full flex items-center justify-center bg-cover`}>
+    <main className="h-screen w-full flex items-center justify-center bg-cover">
       <img src={background} className="absolute z-0 w-full h-full object-cover" alt="" />
-      <div className="w-[60%] md:w-5/12 h-3/5 bg-zinc-600 z-50">
-        <div className="w-full h-full my-8 mx-8">
-          <header className="grid gap-4 md:gap-0 md:w-[90%] md:flex md:items-center justify-between">
+      <div className="w-[75%] md:w-5/12 h-3/5 bg-zinc-600 z-50 overflow-y-auto md:overflow-y-hidden">
+        <div className="w-full h-full my-8 pl-6 md:px-6">
+          <header className="grid gap-4 md:gap-0 w-[90%] md:w-[98%] md:flex md:items-center md:justify-between">
             <input
               type="text"
               className="w-full md:w-[80%] text-white border-b-white border-solid border-b-2 bg-transparent outline-none"
@@ -25,9 +25,9 @@ export function App() {
             </button>
           </header>
 
-          <section className="w-full h-auto pt-4">
+          <section className="w-[90%] grid gap-8 md:block h-full md:h-32 md:w-full mt-8">
             {Object.keys(infoLocale).length !== 0 ? (
-              <Weather infoLocale={infoLocale} locale={locale} />
+              <Weather infoLocale={infoLocale} />
             ): null}
           </section>
         </div>
@@ -38,7 +38,7 @@ export function App() {
   function handleClickWeather() {
     axios
       .get(
-        `http://api.weatherapi.com/v1/forecast.json?key=b38973d27e114306810224449223010&q=${locale}&days=7&aqi=no&alerts=no`
+        `http://api.weatherapi.com/v1/forecast.json?key=b38973d27e114306810224449223010&q=${locale}&days=7&aqi=no&alerts=no&lang=pt`
       )
       .then((res) => setInfoLocale(res.data))
       .catch((err) => alert("Local não encontrado/não existe"));
