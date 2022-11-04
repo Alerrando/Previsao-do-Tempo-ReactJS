@@ -57,10 +57,23 @@ pnpm create vite my-vue-app --template vue
 ## 💡 Tecnologias Usasdas
 <ul>
 <li>TypeScript
-<a href="https://tailwindcss.com/"><li>Tailwind CSS</a>
-<a href="https://postcss.org/"><li>PostCSS</a>
-<a href="https://axios-http.com/docs/intro"><li>Axios</a>
-<a href="https://momentjs.com/"><li>Moment.js</a>
+
+<a href="https://tailwindcss.com/">
+<li>Tailwind CSS
+</a>
+
+<a href="https://postcss.org/">
+<li>PostCSS
+</a>
+
+<a href="https://axios-http.com/docs/intro">
+<li>Axios
+</a>
+
+<a href="https://momentjs.com/">
+<li>Moment.js
+</a>
+
 </ul>
 </br>
 <h3>Instalação Tailwind CSS</h3>
