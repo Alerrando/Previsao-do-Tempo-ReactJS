@@ -18,8 +18,7 @@ export function Weather(props: WeatherProps) {
         <div className="grid gap-2 md:h-28 w-full md:w-auto font-sans py-4 px-4 shadow-mini-modal">
           <div className="grid gap-2">
             <div className="w-full md:w-auto md:flex items-center justify-between gap-7 md:gap-10">
-              <h2 className="text-xl md:text-[1.15rem]">{`${infoLocale.location.name} - ${infoLocale.location.country}`}</h2>
-              <h2 className="text-[1.15rem]">{`${infoLocale.current.temp_c}°`}</h2>
+              <h2 className="text-xl md:text-xl">{`${infoLocale.location.name} - ${infoLocale.location.country}`}</h2>
             </div>
             <div className="w-full flex items-center justify-between">
               <span className="text-base">{moment().format("HH:mm")}</span>
@@ -30,7 +29,10 @@ export function Weather(props: WeatherProps) {
 
         <div className="py-4 px-4 md:h-28 w-full md:w-40 shadow-mini-modal flex flex-col items-center justify-center">
           <img className="w-18 h-18 bg-cover" src={infoLocale.current.condition.icon} alt={infoLocale.current.condition.text} />
-          <h2>{diaSemana[moment().format("E")]}</h2>
+          <div className="w-full flex items-center justify-between">
+            <h2>{diaSemana[moment().format("E")]}</h2>
+            <h2 className="text-base">{`${infoLocale.current.temp_c}°`}</h2>
+          </div>
         </div>
       </div>
 
