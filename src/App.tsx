@@ -11,7 +11,7 @@ export function App() {
   return (
     <main className="h-screen w-full flex items-center justify-center bg-cover">
       <img src={background} className="absolute z-0 w-full h-full object-cover" alt="" />
-      <div className="w-[75%] md:w-5/12 h-3/5 bg-zinc-600 z-50 overflow-y-auto md:overflow-y-hidden">
+      <div className="w-[75%] md:w-5/12 h-3/5 bg-zinc-600 z-50 overflow-y-scroll md:overflow-y-hidden">
         <div className="w-full h-full my-8 pl-6 md:px-6">
           <header className="grid gap-4 md:gap-0 w-[90%] md:w-[98%] md:flex md:items-center md:justify-between">
             <input
@@ -25,7 +25,7 @@ export function App() {
             </button>
           </header>
 
-          <section className="w-[90%] grid gap-8 md:block h-full md:h-32 md:w-full mt-8">
+          <section className="w-[90%] grid gap-8 md:block h-full md:h-32 md:w-full mt-8 text-white">
             {Object.keys(infoLocale).length !== 0 ? (
               <Weather infoLocale={infoLocale} />
             ): null}
