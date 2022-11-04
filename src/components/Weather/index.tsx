@@ -34,13 +34,13 @@ export function Weather(props: WeatherProps) {
         </div>
       </div>
 
-      <div className="grid gap-2 md:flex items-center justify-between mt-4 md:mt-8">
+      <div className="grid gap-2 md:flex items-center justify-between mt-4 md:mt-6 md:mb-4">
         <p className="">{`Humidade: ${infoLocale.current.humidity}%`}</p>
         <p className="">{`Vento: ${infoLocale.current.wind_kph}km/h`}</p>
         <p className="">{`Sensação termica: ${infoLocale.current.feelslike_c}°`}</p>
       </div>
 
-      <div className="h-[90%] grid md:flex md:items-end md:justify-between">
+      <div className="h-[95%] grid md:flex md:items-end md:justify-between">
         {infoLocale.forecast.forecastday.map((day:any, index:number) => (
           <>
             {index != 0 ? (
