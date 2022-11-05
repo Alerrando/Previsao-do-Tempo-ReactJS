@@ -4,7 +4,7 @@
     Previsão do Tempo
 </h1>
 
-<p align="center">Um projeto de um site de Previsão do Tempo feito com <a href="https://www.typescriptlang.org/">Typescript</a></p>
+<p align="center">Um projeto de um site de Previsão do Tempo consumindo a API <a href="https://www.weatherapi.com/">WeatherAPI</a></p>
 </br>
 
 ## ⌨️ Criação e Execução
@@ -56,7 +56,7 @@ pnpm create vite my-vue-app --template vue
 
 ## 💡 Tecnologias Usasdas
 <ul>
-<li>TypeScript
+<li><a href="https://www.typescriptlang.org/">TypeScript</a>
 
 <li><a href="https://tailwindcss.com/">Tailwind CSS</a>
 

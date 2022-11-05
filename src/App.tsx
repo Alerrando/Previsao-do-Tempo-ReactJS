@@ -21,7 +21,7 @@ export function App() {
               placeholder="Digite uma localidade"
             />
             <button type="button" className="bg-green-500 text-white group py-1 px-4 rounded-md opacity-80 hover:opacity-100" onClick={() => handleClickWeather()}>
-              Enviar
+              Buscar
             </button>
           </header>
 
